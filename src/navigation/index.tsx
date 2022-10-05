@@ -10,9 +10,16 @@ import TabNavigation from './TabNavigation';
 import Edit from '../container/HomeScreen/Edit';
 import AddNetwork from '../container/NetworkScreen/AddNetwork';
 
-const Tab = createBottomTabNavigator();
-const Stack = createNativeStackNavigator();
+export type RootNavigationParams = {
+  Tab:{
+    Home:any,
+    Network:any,
+  },
+  Edit:any,
+  SaveNetwork:any,
+}
 
+const Stack = createNativeStackNavigator<RootNavigationParams>();
 
 const index = () => {
   return (
