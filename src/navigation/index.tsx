@@ -2,9 +2,6 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeNavContainer from '../navigation/HomeNavigation'
-import NetworkNavContainer from '../navigation/NetworkNavigation';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import TabNavigation from './TabNavigation';
 import Edit from '../container/HomeScreen/Edit';
